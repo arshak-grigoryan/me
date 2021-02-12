@@ -1,0 +1,63 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.entry {
+  height: 600px;
+  @include bgImg;
+  @media only screen and (max-width: $breakpoint-md) {
+    height: $bgMediumHeight;
+  }
+  @media only screen and (max-width: $breakpoint-sm) {
+    height: $bgMinHeight;
+  }
+  .wrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bgColor;
+    & > div {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @media only screen and (max-width: $breakpoint-sm) {
+        height: auto;
+      }
+      & > p {
+        margin: $smallMargin;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+      & > :first-child {
+        color: $white;
+        font-size: $bigFontSize;
+        @media only screen and (max-width: $breakpoint-md) {
+          font-size: $mediumFontSize;
+        }
+        @media only screen and (max-width: $breakpoint-sm) {
+          font-size: $bigFontSize / 2;
+        }
+      }
+      & > :last-child {
+        color: #248b99;
+        font-size: $mediumFontSize;
+        white-space: nowrap;
+        @media only screen and (max-width: $breakpoint-md) {
+          font-size: $mediumFontSize * 3 / 4;
+        }
+        @media only screen and (max-width: $breakpoint-sm) {
+          font-size: $mediumFontSize / 2;
+        }
+        b {
+          background-color: #0e0e0d;
+          color: #83638c;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../mixins.scss";
+
+.skills {
+  @include bgImg;
+  background-color: $bgColor;
+  .wrapper {
+    padding: $mainPadding;
+    @media only screen and (max-width: $breakpoint-sm) {
+      padding: $mainPadding / 2;
+    }
+    @include heading2;
+    & > div {
+      margin-top: $mainMargin;
+      .ItemWrapper {
+        height: inherit;
+        /* background-color: rgba(0, 0, 0, .2) ; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .icon {
+          display: inline-block;
+          width: $eduImgSIze;
+          height: $eduImgSIze;
+          margin: $mainMargin * 3 / 4;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          @media only screen and (max-width: $breakpoint-sm) {
+            width: $eduImgSIze * 3 / 4;
+            height: $eduImgSIze * 3 / 4;
+            margin: $mainMargin / 2 * 3 / 4;
+          }
+        }
+      }
+    }
+  }
+}

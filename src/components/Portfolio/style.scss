@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.portfolio {
+  background-color: $bgColorSec;
+  .wrapper {
+    padding: $mainPadding;
+    @media only screen and (max-width: $breakpoint-sm) {
+      padding: $mainPadding / 2;
+    }
+    @include heading2;
+  }
+}

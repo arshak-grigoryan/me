@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.top {
+  // display: none;
+  position: fixed;
+  right: $mainPadding + $triangleSize;
+  bottom: $mainPadding + $triangleSize ;
+  color: transparent;
+  cursor: pointer;
+  @media only screen and (max-width: $breakpoint-sm) {
+    right: $mainPadding / 2 + $triangleSize;
+    bottom: $mainPadding / 2 + $triangleSize;
+  }
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: $triangleSize solid transparent;
+    border-right: $triangleSize solid transparent;
+    border-bottom: $triangleSize * 2 solid white;
+  }
+}

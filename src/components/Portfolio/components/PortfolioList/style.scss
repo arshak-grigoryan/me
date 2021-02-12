@@ -1,0 +1,49 @@
+@import "../../../../variables.scss";
+
+ul {
+  margin-top: $mainMargin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  li {
+    width: 20%;
+    text-align: center;
+    margin-top: $mainMargin;
+    @media only screen and (max-width: $breakpoint-xl) {
+      width: 25%;
+    }
+    @media only screen and (max-width: $breakpoint-lg) {
+      width: calc(100% / 3);
+    }
+    @media only screen and (max-width: $breakpoint-md) {
+      width: 50%;
+    }
+    @media only screen and (max-width: $breakpoint-sm) {
+      width: 100%;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      transition: 0.25s;
+      font-size: 18px;
+      &:hover {
+        .projpic{
+          filter: brightness(0.7);
+        }
+        color: #248b99;
+      }
+      .projpic {
+        width: 216px;
+        height: 216px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.25s;
+      }
+    }
+  }
+}
