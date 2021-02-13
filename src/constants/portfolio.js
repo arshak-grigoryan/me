@@ -31,7 +31,14 @@ const PORTFOLIO = [
     name: "Table",
     link: `${MY_GITHUB_URL}/table-react/`,
     image_url: TABLE_REACT,
-    tech: ["HTML", "CSS", "JS"],
+    tech: [
+      "HTML",
+      "SASS",
+      "ReactJS",
+      "Eslint",
+      "Prettier",
+      "Husky",
+    ],
   },
   {
     name: "Weather forecast",
