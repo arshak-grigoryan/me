@@ -27,7 +27,7 @@ export const QUOTES = `${PROJECTS}/quotes.png`;
 export const FOOD_ONLINE_ORDER = `${PROJECTS}/food_online_order.webp`;
 export const WEATHER_FORECAST = `${PROJECTS}/weather_forecast.png`;
 export const SINGLE_PAGE_MARKUP = `${PROJECTS}/single_page_markup.webp`;
-export const TABLE_REACT = `${PROJECTS}/table.png`;
+export const TABLE_REACT = `${PROJECTS}/table_react.png`;
 
 export const PICSART = `${EDUCATION}/picsart.png`;
 export const ISTC = `${EDUCATION}/istc.png`;
